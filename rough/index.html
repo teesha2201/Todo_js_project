@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo js</title>
+    <script src="https://kit.fontawesome.com/87ebf30ca2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- <h1 class="task">Task<span class="list"> List</span></h1> -->
+    <!-- <button onclick="additem()">Add Item</button> -->
+    <div id="backgroundblur">
+            <header>
+            <h1 class="task">Task<span class="list"> List</span></h1>
+            <button onclick="additem()" class="additem"><i class="fa-solid fa-circle-plus"></i>Add Item</button>
+        </header>
+    
+    <p id="ptag">There is no items in Todo List till now..✈✈!!</p>  
+</div>
+
+    <!-- page 2 : popupbox open -->
+    <div id="popupbox" class="popupbox hide ">
+      
+        <h2 class="h2">Add New List</h2> 
+        <input type="text" id="cardname" class="cardname">
+        <button onclick="addCard()" class="addcard">Add</button>
+        <button onclick="hideAddCard()" class="closecard">Close</button>
+
+    </div>
+    
+    <div id="container" class="cardcontainer"></div>
+
+    <!-- page 3 -->
+    <!-- card will show on  first page -->
+
+    <!-- page 4 for itemAdd in js line no. -->
+    <!-- <div id="popupboxitem" class="popupbox hide ">
+      
+        <h2 class="h2">Add New Item</h2>
+        
+        <input type="text" id="additemname" class="cardname">
+    
+        <button onclick="additemlist()" class="additem">Add</button>
+        <button onclick="hideAddCard()" class="closecard">Close</button>
+
+    </div>
+     -->
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
